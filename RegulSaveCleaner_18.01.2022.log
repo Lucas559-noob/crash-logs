@@ -1,0 +1,69 @@
+﻿[18.01.2022 20:19:21.517] | Fatal | [System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary()] System.Reflection.TargetInvocationException: An exception occurred during the operation, making the result invalid.  Check InnerException for exception details.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at RegulSaveCleaner.ViewModels.MainWindowViewModel.bgwClean_DoWork(Object sender, DoWorkEventArgs e)
+   at System.ComponentModel.BackgroundWorker.OnDoWork(DoWorkEventArgs e)
+   at System.ComponentModel.BackgroundWorker.WorkerThreadStart(Object argument)
+   --- End of inner exception stack trace ---
+   at System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary()
+   at RegulSaveCleaner.ViewModels.MainWindowViewModel.bgwClean_RunWorkerCompleted(Object sender, RunWorkerCompletedEventArgs e)
+   at System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(RunWorkerCompletedEventArgs e)
+   at System.ComponentModel.BackgroundWorker.AsyncOperationCompleted(Object arg)
+   at Avalonia.Threading.AvaloniaSynchronizationContext.<>c__DisplayClass5_0.<Post>b__0() in /_/src/Avalonia.Base/Threading/AvaloniaSynchronizationContext.cs:line 33
+   at Avalonia.Threading.JobRunner.RunJobs(Nullable`1 priority) in /_/src/Avalonia.Base/Threading/JobRunner.cs:line 37
+   at Avalonia.Win32.Win32Platform.WndProc(IntPtr hWnd, UInt32 msg, IntPtr wParam, IntPtr lParam) in /_/src/Windows/Avalonia.Win32/Win32Platform.cs:line 278
+   at Avalonia.Win32.Interop.UnmanagedMethods.DispatchMessage(MSG& lpmsg)
+   at Avalonia.Win32.Win32Platform.RunLoop(CancellationToken cancellationToken) in /_/src/Windows/Avalonia.Win32/Win32Platform.cs:line 205
+   at Avalonia.Threading.Dispatcher.MainLoop(CancellationToken cancellationToken) in /_/src/Avalonia.Base/Threading/Dispatcher.cs:line 61
+   at Avalonia.Controls.DesktopApplicationExtensions.Run(Application app, CancellationToken token) in /_/src/Avalonia.Controls/DesktopApplicationExtensions.cs:line 57
+   at Avalonia.Controls.DesktopApplicationExtensions.Run(Application app, Window mainWindow) in /_/src/Avalonia.Controls/DesktopApplicationExtensions.cs:line 46
+   at RegulSaveCleaner.Program.AppMain(Application app, String[] args)
+   at Avalonia.Controls.AppBuilderBase`1.Start(AppMainDelegate main, String[] args) in /_/src/Avalonia.Controls/AppBuilderBase.cs:line 158
+   at RegulSaveCleaner.Program.Main(String[] args)
+[18.01.2022 20:21:49.602] | Fatal | [System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary()] System.Reflection.TargetInvocationException: An exception occurred during the operation, making the result invalid.  Check InnerException for exception details.
+ ---> System.IO.IOException: The process cannot access the file 'C:\Users\Lucas\Documents\Electronic Arts\The Sims 3\Saves\Sunset Valley.sims3\1a5tf1l3.dat' because it is being used by another process.
+   at System.IO.FileSystem.CopyFile(String sourceFullPath, String destFullPath, Boolean overwrite)
+   at System.IO.FileInfo.CopyTo(String destFileName, Boolean overwrite)
+   at RegulSaveCleaner.ViewModels.MainWindowViewModel.DirectoryCopy(String sourceDirName, String destDirName, Boolean copySubDirs)
+   at RegulSaveCleaner.ViewModels.MainWindowViewModel.bgwClean_DoWork(Object sender, DoWorkEventArgs e)
+   at System.ComponentModel.BackgroundWorker.OnDoWork(DoWorkEventArgs e)
+   at System.ComponentModel.BackgroundWorker.WorkerThreadStart(Object argument)
+   --- End of inner exception stack trace ---
+   at System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary()
+   at RegulSaveCleaner.ViewModels.MainWindowViewModel.bgwClean_RunWorkerCompleted(Object sender, RunWorkerCompletedEventArgs e)
+   at System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(RunWorkerCompletedEventArgs e)
+   at System.ComponentModel.BackgroundWorker.AsyncOperationCompleted(Object arg)
+   at Avalonia.Threading.AvaloniaSynchronizationContext.<>c__DisplayClass5_0.<Post>b__0() in /_/src/Avalonia.Base/Threading/AvaloniaSynchronizationContext.cs:line 33
+   at Avalonia.Threading.JobRunner.RunJobs(Nullable`1 priority) in /_/src/Avalonia.Base/Threading/JobRunner.cs:line 37
+   at Avalonia.Win32.Win32Platform.WndProc(IntPtr hWnd, UInt32 msg, IntPtr wParam, IntPtr lParam) in /_/src/Windows/Avalonia.Win32/Win32Platform.cs:line 278
+   at Avalonia.Win32.Interop.UnmanagedMethods.DispatchMessage(MSG& lpmsg)
+   at Avalonia.Win32.Win32Platform.RunLoop(CancellationToken cancellationToken) in /_/src/Windows/Avalonia.Win32/Win32Platform.cs:line 205
+   at Avalonia.Threading.Dispatcher.MainLoop(CancellationToken cancellationToken) in /_/src/Avalonia.Base/Threading/Dispatcher.cs:line 61
+   at Avalonia.Controls.DesktopApplicationExtensions.Run(Application app, CancellationToken token) in /_/src/Avalonia.Controls/DesktopApplicationExtensions.cs:line 57
+   at Avalonia.Controls.DesktopApplicationExtensions.Run(Application app, Window mainWindow) in /_/src/Avalonia.Controls/DesktopApplicationExtensions.cs:line 46
+   at RegulSaveCleaner.Program.AppMain(Application app, String[] args)
+   at Avalonia.Controls.AppBuilderBase`1.Start(AppMainDelegate main, String[] args) in /_/src/Avalonia.Controls/AppBuilderBase.cs:line 158
+   at RegulSaveCleaner.Program.Main(String[] args)
+[18.01.2022 20:28:48.561] | Fatal | [System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary()] System.Reflection.TargetInvocationException: An exception occurred during the operation, making the result invalid.  Check InnerException for exception details.
+ ---> System.IO.IOException: The process cannot access the file 'C:\Users\Lucas\Documents\Electronic Arts\The Sims 3\Saves\Sunset Valley.sims3\1a5tf1l3.dat' because it is being used by another process.
+   at System.IO.FileSystem.CopyFile(String sourceFullPath, String destFullPath, Boolean overwrite)
+   at System.IO.FileInfo.CopyTo(String destFileName, Boolean overwrite)
+   at RegulSaveCleaner.ViewModels.MainWindowViewModel.DirectoryCopy(String sourceDirName, String destDirName, Boolean copySubDirs)
+   at RegulSaveCleaner.ViewModels.MainWindowViewModel.bgwClean_DoWork(Object sender, DoWorkEventArgs e)
+   at System.ComponentModel.BackgroundWorker.OnDoWork(DoWorkEventArgs e)
+   at System.ComponentModel.BackgroundWorker.WorkerThreadStart(Object argument)
+   --- End of inner exception stack trace ---
+   at System.ComponentModel.AsyncCompletedEventArgs.RaiseExceptionIfNecessary()
+   at RegulSaveCleaner.ViewModels.MainWindowViewModel.bgwClean_RunWorkerCompleted(Object sender, RunWorkerCompletedEventArgs e)
+   at System.ComponentModel.BackgroundWorker.OnRunWorkerCompleted(RunWorkerCompletedEventArgs e)
+   at System.ComponentModel.BackgroundWorker.AsyncOperationCompleted(Object arg)
+   at Avalonia.Threading.AvaloniaSynchronizationContext.<>c__DisplayClass5_0.<Post>b__0() in /_/src/Avalonia.Base/Threading/AvaloniaSynchronizationContext.cs:line 33
+   at Avalonia.Threading.JobRunner.RunJobs(Nullable`1 priority) in /_/src/Avalonia.Base/Threading/JobRunner.cs:line 37
+   at Avalonia.Win32.Win32Platform.WndProc(IntPtr hWnd, UInt32 msg, IntPtr wParam, IntPtr lParam) in /_/src/Windows/Avalonia.Win32/Win32Platform.cs:line 278
+   at Avalonia.Win32.Interop.UnmanagedMethods.DispatchMessage(MSG& lpmsg)
+   at Avalonia.Win32.Win32Platform.RunLoop(CancellationToken cancellationToken) in /_/src/Windows/Avalonia.Win32/Win32Platform.cs:line 205
+   at Avalonia.Threading.Dispatcher.MainLoop(CancellationToken cancellationToken) in /_/src/Avalonia.Base/Threading/Dispatcher.cs:line 61
+   at Avalonia.Controls.DesktopApplicationExtensions.Run(Application app, CancellationToken token) in /_/src/Avalonia.Controls/DesktopApplicationExtensions.cs:line 57
+   at Avalonia.Controls.DesktopApplicationExtensions.Run(Application app, Window mainWindow) in /_/src/Avalonia.Controls/DesktopApplicationExtensions.cs:line 46
+   at RegulSaveCleaner.Program.AppMain(Application app, String[] args)
+   at Avalonia.Controls.AppBuilderBase`1.Start(AppMainDelegate main, String[] args) in /_/src/Avalonia.Controls/AppBuilderBase.cs:line 158
+   at RegulSaveCleaner.Program.Main(String[] args)
